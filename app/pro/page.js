@@ -33,7 +33,12 @@ export default function ProPage() {
             <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full bg-cyan-400/10 blur-[140px]" />
 
             {/* CARD */}
-            <div className="relative z-10 w-full max-w-2xl rounded-[38px] border border-white/10 bg-[#0b1120]/85 backdrop-blur-2xl shadow-[0_25px_120px_rgba(0,0,0,0.6)] overflow-hidden">
+            <div className="relative z-10 w-full max-w-2xl rounded-[38px] border border-white/10 bg-[#0b1120]/85 backdrop-blur-2xl shadow-[0_25px_120px_rgba(0,0,0,0.6)] overflow-hidden "
+            style={
+                {
+                    padding : 20
+                }
+            }>
 
                 {/* TOP LIGHT */}
                 <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
@@ -43,7 +48,10 @@ export default function ProPage() {
                     {/* BADGE */}
                     <div className="flex justify-center">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2.5">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2.5"
+                             style={{
+                                 padding :  10
+                             }}>
 
                             <Sparkles className="w-4 h-4 text-cyan-300" />
 
@@ -119,7 +127,11 @@ export default function ProPage() {
 
                         </div>
 
-                        <p className="mt-3 text-zinc-400 text-base">
+                        <p className="mt-3 text-zinc-400 text-base"
+
+                           style={{
+                               padding : 20
+                           }}>
                             Cancel anytime. Instant premium access.
                         </p>
 
@@ -149,21 +161,36 @@ export default function ProPage() {
                     </div>
 
                     {/* PAYMENT METHODS */}
-                    <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm font-bold text-zinc-300 tracking-[0.15em]">
+                    <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm font-bold text-zinc-300 tracking-[0.15em]"
+                         style={{
+                             padding : 20
+                         }}>
 
-                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5">
+                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5"
+                        style={{
+                            padding : 5
+                        }}>
                             VISA
                         </span>
 
-                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5">
+                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5"
+                              style={{
+                                  padding : 5
+                              }}>
                             MASTERCARD
                         </span>
 
-                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5">
+                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5"
+                              style={{
+                                  padding : 5
+                              }}>
                             APPLE PAY
                         </span>
 
-                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5">
+                        <span className="rounded-full bg-white/5 px-4 py-2 border border-white/5"
+                              style={{
+                                  padding : 5
+                              }}>
                             PAYPAL
                         </span>
 
@@ -181,7 +208,11 @@ export default function ProPage() {
 
 function Feature({ icon, title, desc }) {
     return (
-        <div className="group flex items-start gap-4 rounded-[24px] border border-white/6 bg-white/[0.04] px-5 py-5 transition-all duration-300 hover:bg-white/[0.07] hover:border-cyan-400/20">
+        <div className="group flex items-start gap-4 rounded-[24px] border border-white/6 bg-white/[0.04] px-5 py-5 transition-all duration-300 hover:bg-white/[0.07] hover:border-cyan-400/20"
+        style={{
+            padding : 20,
+            margin : 10,
+        }}>
 
             {/* ICON */}
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-cyan-400/10 border border-cyan-400/15">

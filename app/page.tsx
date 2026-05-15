@@ -43,46 +43,53 @@ export default function Home() {
             <div className="relative z-10">
 
                 {/* NAVBAR */}
-                <nav className="w-full flex items-center justify-between px-8 lg:px-16 py-8">
+                <nav
+                    className="w-full max-w-[1800px] mx-auto flex items-center justify-between"
+                    style={{
+                        paddingTop: 10,
+                        paddingBottom: 10,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+                    }}
+                >
 
                     {/* LOGO */}
-                    <div className="flex items-center gap-4">
+                    <div
+                        className="flex items-center gap-4"
+                        style={{
+                            padding: 10,
+                        }}
+                    >
 
-                        <div className="w-14 h-14 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/10 flex items-center justify-center">
+                        <div
+                            className="w-14 h-14 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/10 flex items-center justify-center"
+                            style={{
+                                padding: 10,
+                            }}
+                        >
 
                             <Plane className="text-white w-7 h-7" />
 
                         </div>
 
-                        <h1 className="text-3xl font-bold">
+                        <h1
+                            className="text-3xl font-bold"
+                            style={{
+                                paddingLeft: 4,
+                            }}
+                        >
                             TravelApp
                         </h1>
 
                     </div>
 
-                    {/* NAV LINKS */}
-                    <div className="hidden lg:flex items-center gap-10 text-lg text-gray-300">
-
-                        <button className="hover:text-white transition">
-                            Destinations
-                        </button>
-
-                        <button className="hover:text-white transition">
-                            Experiences
-                        </button>
-
-                        <button className="hover:text-white transition">
-                            Pricing
-                        </button>
-
-                        <button className="hover:text-white transition">
-                            About
-                        </button>
-
-                    </div>
-
                     {/* AUTH */}
-                    <div className="flex items-center gap-5">
+                    <div
+                        className="flex items-center gap-5"
+                        style={{
+                            padding: 10,
+                        }}
+                    >
 
                         {isLoggedIn ? (
 
@@ -96,7 +103,13 @@ export default function Home() {
                                 </Link>
 
                                 <button
-                                    className="px-6 py-3 rounded-2xl bg-white/10 border border-white/10 hover:bg-white/15 transition"
+                                    className="rounded-2xl bg-white/10 border border-white/10 hover:bg-white/15 transition text-white"
+                                    style={{
+                                        paddingTop: 10,
+                                        paddingBottom: 10,
+                                        paddingLeft: 20,
+                                        paddingRight: 20,
+                                    }}
                                 >
                                     Logout
                                 </button>
@@ -109,14 +122,26 @@ export default function Home() {
 
                                 <Link
                                     href="/login"
-                                    className="text-gray-300 hover:text-white transition"
+                                    className="text-gray-300 hover:text-white transition rounded-2xl bg-white/5 border border-white/10"
+                                    style={{
+                                        paddingTop: 10,
+                                        paddingBottom: 10,
+                                        paddingLeft: 20,
+                                        paddingRight: 20,
+                                    }}
                                 >
                                     Login
                                 </Link>
 
                                 <Link
                                     href="/register"
-                                    className="px-6 py-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 text-white font-semibold hover:scale-[1.03] transition duration-300 shadow-2xl"
+                                    className="rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 text-white font-semibold hover:scale-[1.03] transition duration-300 shadow-2xl"
+                                    style={{
+                                        paddingTop: 10,
+                                        paddingBottom: 10,
+                                        paddingLeft: 24,
+                                        paddingRight: 24,
+                                    }}
                                 >
                                     Get Started
                                 </Link>
@@ -130,15 +155,32 @@ export default function Home() {
                 </nav>
 
                 {/* HERO SECTION */}
-                <section className="min-h-[85vh] flex items-center px-8 lg:px-16">
+                <section
+                    className="min-h-[78vh] flex items-center"
+                    style={{
+                        paddingTop: 0,
+                        paddingBottom: 0,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+                    }}
+                >
 
                     <div className="grid lg:grid-cols-2 gap-20 items-center w-full">
 
                         {/* LEFT */}
-                        <div>
+                        <div
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             {/* BADGE */}
-                            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl mb-10">
+                            <div
+                                className="inline-flex items-center gap-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl mb-10"
+                                style={{
+                                    padding: 18,
+                                }}
+                            >
 
                                 <Sparkles className="w-5 h-5 text-cyan-300" />
 
@@ -149,7 +191,13 @@ export default function Home() {
                             </div>
 
                             {/* TITLE */}
-                            <h1 className="text-6xl lg:text-8xl font-bold leading-[0.95] mb-10">
+                            <h1
+                                className="text-6xl lg:text-8xl font-bold leading-[0.95] mb-10"
+                                style={{
+                                    paddingTop: 10,
+                                    paddingBottom: 10,
+                                }}
+                            >
 
                                 Explore The World
                                 <br />
@@ -161,7 +209,13 @@ export default function Home() {
                             </h1>
 
                             {/* DESCRIPTION */}
-                            <p className="text-2xl text-gray-300 leading-relaxed max-w-2xl mb-12">
+                            <p
+                                className="text-2xl text-gray-300 leading-relaxed max-w-2xl mb-12"
+                                style={{
+                                    paddingTop: 10,
+                                    paddingBottom: 10,
+                                }}
+                            >
 
                                 Discover breathtaking destinations,
                                 personalized travel experiences,
@@ -170,12 +224,24 @@ export default function Home() {
                             </p>
 
                             {/* BUTTONS */}
-                            <div className="flex flex-wrap gap-6">
+                            <div
+                                className="flex flex-wrap gap-6"
+                                style={{
+                                    paddingTop: 10,
+                                    paddingBottom: 10,
+                                }}
+                            >
 
                                 {/* START */}
                                 <button
                                     onClick={() => router.push("/register")}
-                                    className="px-10 py-5 rounded-3xl bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 text-white text-xl font-bold hover:scale-[1.03] transition duration-300 shadow-2xl"
+                                    className="rounded-3xl bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 text-white text-xl font-bold hover:scale-[1.03] transition duration-300 shadow-2xl"
+                                    style={{
+                                        paddingTop: 18,
+                                        paddingBottom: 18,
+                                        paddingLeft: 30,
+                                        paddingRight: 30,
+                                    }}
                                 >
                                     Start Exploring
                                 </button>
@@ -183,7 +249,13 @@ export default function Home() {
                                 {/* LEARN MORE */}
                                 <button
                                     onClick={() => router.push("/learn-more")}
-                                    className="px-10 py-5 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl text-xl font-semibold hover:bg-white/15 transition"
+                                    className="rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl text-xl font-semibold hover:bg-white/15 transition"
+                                    style={{
+                                        paddingTop: 18,
+                                        paddingBottom: 18,
+                                        paddingLeft: 30,
+                                        paddingRight: 30,
+                                    }}
                                 >
                                     Learn More
                                 </button>
@@ -191,7 +263,13 @@ export default function Home() {
                                 {/* GO PRO */}
                                 <button
                                     onClick={() => router.push("/pro")}
-                                    className="px-10 py-5 rounded-3xl border border-yellow-400/30 bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 text-black text-xl font-black hover:scale-[1.03] transition duration-300 shadow-[0_20px_60px_rgba(251,191,36,0.35)]"
+                                    className="rounded-3xl border border-yellow-400/30 bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 text-black text-xl font-black hover:scale-[1.03] transition duration-300 shadow-[0_20px_60px_rgba(251,191,36,0.35)]"
+                                    style={{
+                                        paddingTop: 18,
+                                        paddingBottom: 18,
+                                        paddingLeft: 30,
+                                        paddingRight: 30,
+                                    }}
                                 >
                                     Go Pro
                                 </button>
@@ -201,12 +279,27 @@ export default function Home() {
                         </div>
 
                         {/* RIGHT */}
-                        <div className="grid gap-6">
+                        <div
+                            className="grid gap-6"
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             {/* CARD 1 */}
-                            <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] p-8 hover:bg-white/15 transition duration-300">
+                            <div
+                                className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] hover:bg-white/15 transition duration-300"
+                                style={{
+                                    padding: 20,
+                                }}
+                            >
 
-                                <div className="flex items-center gap-5 mb-6">
+                                <div
+                                    className="flex items-center gap-5 mb-6"
+                                    style={{
+                                        paddingBottom: 10,
+                                    }}
+                                >
 
                                     <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center">
 
@@ -236,9 +329,19 @@ export default function Home() {
                             </div>
 
                             {/* CARD 2 */}
-                            <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] p-8 hover:bg-white/15 transition duration-300">
+                            <div
+                                className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] hover:bg-white/15 transition duration-300"
+                                style={{
+                                    padding: 20,
+                                }}
+                            >
 
-                                <div className="flex items-center gap-5 mb-6">
+                                <div
+                                    className="flex items-center gap-5 mb-6"
+                                    style={{
+                                        paddingBottom: 10,
+                                    }}
+                                >
 
                                     <div className="w-16 h-16 rounded-2xl bg-blue-500/20 flex items-center justify-center">
 
@@ -268,9 +371,19 @@ export default function Home() {
                             </div>
 
                             {/* CARD 3 */}
-                            <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] p-8 hover:bg-white/15 transition duration-300">
+                            <div
+                                className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] hover:bg-white/15 transition duration-300"
+                                style={{
+                                    padding: 20,
+                                }}
+                            >
 
-                                <div className="flex items-center gap-5 mb-6">
+                                <div
+                                    className="flex items-center gap-5 mb-6"
+                                    style={{
+                                        paddingBottom: 10,
+                                    }}
+                                >
 
                                     <div className="w-16 h-16 rounded-2xl bg-yellow-500/20 flex items-center justify-center">
 
@@ -306,11 +419,23 @@ export default function Home() {
                 </section>
 
                 {/* STATS */}
-                <section className="px-8 lg:px-16 pb-20">
+                <section
+                    style={{
+                        paddingTop: 185,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+                        paddingBottom: 20,
+                    }}
+                >
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
 
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+                        <div
+                            className="bg-white/5 border border-white/10 rounded-3xl backdrop-blur-xl"
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             <h3 className="text-5xl font-bold text-cyan-300 mb-3">
                                 50K+
@@ -322,7 +447,12 @@ export default function Home() {
 
                         </div>
 
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+                        <div
+                            className="bg-white/5 border border-white/10 rounded-3xl backdrop-blur-xl"
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             <h3 className="text-5xl font-bold text-blue-300 mb-3">
                                 120+
@@ -334,7 +464,12 @@ export default function Home() {
 
                         </div>
 
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+                        <div
+                            className="bg-white/5 border border-white/10 rounded-3xl backdrop-blur-xl"
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             <h3 className="text-5xl font-bold text-yellow-300 mb-3">
                                 4.9★
@@ -346,7 +481,12 @@ export default function Home() {
 
                         </div>
 
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+                        <div
+                            className="bg-white/5 border border-white/10 rounded-3xl backdrop-blur-xl"
+                            style={{
+                                padding: 20,
+                            }}
+                        >
 
                             <h3 className="text-5xl font-bold text-cyan-300 mb-3">
                                 24/7
